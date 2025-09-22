@@ -62,3 +62,33 @@ showStars(rows);
 console.log("");
 console.log("-------------------------------------");
 console.log("");
+
+// -------------------------------------------
+// Problem 3: Prime Number Checker
+// -------------------------------------------
+
+function isPrime(checkNum) {
+    if (checkNum <= 1) return false; // 0 and 1 are not prime
+    // test divisibility up to square root of number
+    for (let i = 2; i <= Math.sqrt(checkNum); i++) 
+    {
+        if (checkNum % i === 0) 
+        { 
+            // divisible by another number
+            return "not prime";
+        }
+    }
+    return "prime";
+}
+
+// number to check
+let checkNum = baseNumber + 10;
+
+console.log("Problem 3: Prime Number Checker");
+console.log("");
+console.log("check", checkNum, "-->", isPrime(checkNum));
+
+// interval
+console.log("");
+console.log("-------------------------------------");
+console.log("");
