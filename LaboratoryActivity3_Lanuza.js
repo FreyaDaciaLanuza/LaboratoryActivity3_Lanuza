@@ -31,3 +31,34 @@ console.log("Score:", grade, "--> Grade:", calculateGrade(grade));
 console.log("");
 console.log("-------------------------------------");
 console.log("");
+
+// -------------------------------------------
+// Problem 2: Star Pattern
+// -------------------------------------------
+
+let rows = baseNumber + 2;
+
+console.log("Problem 2: Star Pattern (Rows =", rows, ")");
+console.log("");
+
+function showStars(rows) 
+{
+    // Outer loop = number of rows
+    for (let i = 1; i <= rows; i++) 
+    {
+        let stars = "";
+        // Inner loop = number of stars per row
+        for (let j = 1; j <= i; j++) 
+        {
+            stars += "*";
+        }
+        console.log(stars); // print row of stars
+    }
+}
+
+showStars(rows);
+
+// interval
+console.log("");
+console.log("-------------------------------------");
+console.log("");
