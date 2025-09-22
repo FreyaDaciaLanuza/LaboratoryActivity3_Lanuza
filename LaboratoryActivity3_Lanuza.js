@@ -1,8 +1,9 @@
 // LANUZA, FREYA DACIA N. 
 // BSCS 2B
 
-let baseNumber = 3; // from 2023-7298-19003
+let baseNumber = 3; // from the last digit in 2023-7298-19003 (Lanuza, Freya Dacia N.)
 
+// interval
 console.log("");
 console.log("-------------------------------------");
 console.log("");
@@ -13,11 +14,11 @@ console.log("");
 
 function calculateGrade(grade) 
 {
-    if (grade < 60) return 'F';     
-    if (grade < 70) return 'D';     
-    if (grade < 80) return 'C';     
-    if (grade < 90) return 'B';     
-    return 'A';                     
+    if (grade < 60) return 'F';     // if grade is 0–59
+    if (grade < 70) return 'D';     // if grade is 60-69
+    if (grade < 80) return 'C';     // if grade is 70-79
+    if (grade < 90) return 'B';     // if grade is 80-89
+    return 'A';                     // if grade is 90-100
 }
 
 // compute score
@@ -38,7 +39,7 @@ console.log("");
 
 let rows = baseNumber + 2;
 
-console.log("Problem 2: Star Pattern (Rows =", rows, ")");
+console.log("Problem 2: Star Pattern ( Rows =", rows, ")");
 console.log("");
 
 function showStars(rows) 
@@ -50,7 +51,7 @@ function showStars(rows)
         // Inner loop = number of stars per row
         for (let j = 1; j <= i; j++) 
         {
-            stars += "*";
+            stars += "* ";
         }
         console.log(stars); // print row of stars
     }
@@ -74,7 +75,7 @@ function isPrime(checkNum) {
     {
         if (checkNum % i === 0) 
         { 
-            // divisible by another number
+            // to check if divisible by another number
             return "not prime";
         }
     }
@@ -101,7 +102,7 @@ function multiplicationTable(n)
 {
     for (let i = 1; i <= 10; i++) 
     {
-        // formatted output
+        // output
         console.log(n, "x", i, "=", n * i);
     }
 }
