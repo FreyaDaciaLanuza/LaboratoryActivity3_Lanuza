@@ -92,3 +92,25 @@ console.log("check", checkNum, "-->", isPrime(checkNum));
 console.log("");
 console.log("-------------------------------------");
 console.log("");
+
+// -------------------------------------------
+// Problem 4: Multiplication Table
+// -------------------------------------------
+
+function multiplicationTable(n) 
+{
+    for (let i = 1; i <= 10; i++) 
+    {
+        // formatted output
+        console.log(n, "x", i, "=", n * i);
+    }
+}
+
+console.log("Problem 4: Multiplication Table of", baseNumber);
+console.log("");
+multiplicationTable(baseNumber);
+
+// interval
+console.log("");
+console.log("-------------------------------------");
+console.log("");
